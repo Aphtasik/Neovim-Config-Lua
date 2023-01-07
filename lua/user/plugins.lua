@@ -48,6 +48,23 @@ return packer.startup(function(use)
   -- Colorschemes
   use "morhetz/gruvbox"
 
+  -- Cmp
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "saadparwaiz1/cmp_luasnip"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+
+  use "L3MON4D3/LuaSnip"
+
+  -- LSP
+  use "neovim/nvim-lspconfig"
+  use "williamboman/mason.nvim" -- simple to use language server installer
+  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
+  
   -- Copilot
   use 'github/copilot.vim'
 
